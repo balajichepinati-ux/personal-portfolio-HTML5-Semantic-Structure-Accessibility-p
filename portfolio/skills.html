@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Skills & Tech Stack | Alex Mercer</title>
+  <meta name="description" content="View the technical capabilities, technologies, and certifications of Alex Mercer, spanning frontend engineering, 3D CSS rendering, and accessibility testing.">
+  <meta name="keywords" content="Tech Stack, Frontend Skills, CSS 3D Transforms, Web Accessibility Testing, React, Javascript Core">
+  <link rel="canonical" href="https://alexmercer.dev/skills.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alexmercer.dev/skills.html">
+  <meta property="og:title" content="Skills & Tech Stack | Alex Mercer">
+  <meta property="og:description" content="View the technical capabilities, technologies, and certifications of Alex Mercer, spanning frontend engineering, 3D CSS rendering, and accessibility testing.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Screen Reader Skip-Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Active Screen Reader Announcer -->
+  <div id="sr-announcer" class="sr-only" aria-live="polite"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Alex Mercer Home">
+        ALEX.DEV<span class="logo-dot" aria-hidden="true"></span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Navigation Menu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-cta">Hire Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main id="main-content" class="page-section">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <header class="section-header">
+        <span class="section-pretitle">The Toolkit</span>
+        <h1 class="section-title">Technical Expertise</h1>
+        <p class="section-desc">My primary core skills are grouped by engineering layer. Scroll down to see full interactive animation loads.</p>
+      </header>
+
+      <!-- Circular SVG Progress Indicators Section -->
+      <section class="circular-skills-container" aria-label="Core Competencies">
+        
+        <div class="glass-card circle-skill-card">
+          <div class="svg-circle-wrap">
+            <svg viewBox="0 0 100 100">
+              <defs>
+                <linearGradient id="cyan-purple-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#06b6d4" />
+                  <stop offset="100%" stop-color="#7c3aed" />
+                </linearGradient>
+              </defs>
+              <circle cx="50" cy="50" r="45" class="circle-bg" />
+              <circle cx="50" cy="50" r="45" class="circle-progress" data-level="95" />
+            </svg>
+            <div class="circle-number" aria-live="polite">95%</div>
+          </div>
+          <h2 class="circle-label">HTML5 / Semantic</h2>
+        </div>
+
+        <div class="glass-card circle-skill-card">
+          <div class="svg-circle-wrap">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" class="circle-bg" />
+              <circle cx="50" cy="50" r="45" class="circle-progress" data-level="90" />
+            </svg>
+            <div class="circle-number" aria-live="polite">90%</div>
+          </div>
+          <h2 class="circle-label">CSS3 / 3D Transforms</h2>
+        </div>
+
+        <div class="glass-card circle-skill-card">
+          <div class="svg-circle-wrap">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" class="circle-bg" />
+              <circle cx="50" cy="50" r="45" class="circle-progress" data-level="92" />
+            </svg>
+            <div class="circle-number" aria-live="polite">92%</div>
+          </div>
+          <h2 class="circle-label">Vanilla JS / APIs</h2>
+        </div>
+
+        <div class="glass-card circle-skill-card">
+          <div class="svg-circle-wrap">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" class="circle-bg" />
+              <circle cx="50" cy="50" r="45" class="circle-progress" data-level="100" />
+            </svg>
+            <div class="circle-number" aria-live="polite">100%</div>
+          </div>
+          <h2 class="circle-label">WCAG / ARIA Auditing</h2>
+        </div>
+
+      </section>
+
+      <!-- Interactive Category Filter Tabs -->
+      <div class="filter-tabs" aria-label="Skills categories filtering menu">
+        <button class="tab-btn active" data-filter="all">All Layers</button>
+        <button class="tab-btn" data-filter="frontend">Frontend Architecture</button>
+        <button class="tab-btn" data-filter="auditing">Accessibility / SEO</button>
+        <button class="tab-btn" data-filter="backend">Backend & Logic</button>
+      </div>
+
+      <!-- Linear Skills Grid -->
+      <div class="skills-grid">
+        
+        <!-- Frontend Card -->
+        <article class="glass-card skill-category-card project-card" data-category="frontend" aria-labelledby="fe-title">
+          <div class="project-content">
+            <h3 id="fe-title" class="skill-card-title">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              Frontend Architecture
+            </h3>
+            
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span>Custom responsive CSS (Grid/Flex)</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-level="95" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Responsive CSS skills level"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span>CSS 3D Transforms / Perspective</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-level="88" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="3D Transforms skills level"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span>SVG Optimization / Animations</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-level="90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="SVG animations skills level"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Accessibility / Auditing Card -->
+        <article class="glass-card skill-category-card project-card" data-category="auditing" aria-labelledby="audit-title">
+          <div class="project-content">
+            <h3 id="audit-title" class="skill-card-title">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              Accessibility & SEO
+            </h3>
+            
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span>WCAG 2.2 AA Auditing & Testing</span>
+                  <span>100%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-level="100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="WCAG Auditing skills level"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span>ARIA Landmarking / Focus states</span>
+                  <span>98%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-level="98" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" aria-label="ARIA Landmarking skills level"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span>Semantic Schema.org Structured SEO</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-level="95" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="SEO mapping skills level"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Backend Card -->
+        <article class="glass-card skill-category-card project-card" data-category="backend" aria-labelledby="back-title">
+          <div class="project-content">
+            <h3 id="back-title" class="skill-card-title">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+              Backend & Logic
+            </h3>
+            
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span>Vanilla Node.js / Server APIs</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-level="85" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Node js API skills level"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span>State Logic Sync Systems</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-level="80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="State management skills level"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span>Secure client-side tokens processing</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-bar" data-level="90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Authentication logic skills level"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <ul class="footer-nav" aria-label="Footer Quick Links">
+        <li><a href="about.html" class="footer-link">About</a></li>
+        <li><a href="skills.html" class="footer-link">Skills</a></li>
+        <li><a href="projects.html" class="footer-link">Projects</a></li>
+        <li><a href="services.html" class="footer-link">Services</a></li>
+        <li><a href="resume.html" class="footer-link">Resume</a></li>
+        <li><a href="contact.html" class="footer-link">Contact</a></li>
+      </ul>
+      <p class="copyright">&copy; 2026 Alex Mercer. Built with standard semantic HTML5 & modern CSS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
